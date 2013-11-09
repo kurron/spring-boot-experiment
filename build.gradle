@@ -16,6 +16,7 @@ buildscript {
 }
 
 apply plugin: 'groovy'
+apply plugin: 'project-report'
 apply plugin: 'spring-boot'
 
 repositories {
@@ -32,3 +33,5 @@ dependencies {
 task wrapper( type: Wrapper ) {
     gradleVersion = '1.8'
 }
+
+defaultTasks 'clean', 'projectReport', 'build'
