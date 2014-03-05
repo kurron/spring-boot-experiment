@@ -5,13 +5,17 @@ ext {
 }
 
 buildscript {
+    ext {
+        // not very DRY but we have a chicken-and-egg situation
+        springBootVersion = '1.0.0.RC4'
+    }
+
     repositories {
         maven { url 'http://repo.spring.io/libs-snapshot' }
         mavenLocal()
     }
     dependencies {
-        // can't use a variable here -- chicken and egg issue
-        classpath( "org.springframework.boot:spring-boot-gradle-plugin:1.0.0.RC4" )
+        classpath( "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}" )
     }
 }
 
@@ -28,11 +32,11 @@ dependencies {
     compile "org.codehaus.groovy:groovy-all:${groovyVersion}"
     compile "org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}"
     compile "org.springframework.boot:spring-boot-starter-batch:${springBootVersion}"
-//  compile "org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}"
     compile "org.springframework.boot:spring-boot-starter-integration:${springBootVersion}"
 //  compile "org.springframework.boot:spring-boot-starter-jetty:${springBootVersion}"
     compile "org.springframework.boot:spring-boot-starter-logging:${springBootVersion}"
-//  compile "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
     compile "org.springframework.boot:spring-boot-starter-security:${springBootVersion}"
     compile "org.springframework.boot:spring-boot-starter-tomcat:${springBootVersion}"
     compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
