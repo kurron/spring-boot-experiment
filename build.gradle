@@ -1,6 +1,6 @@
 ext {
-    springBootVersion = '0.5.0.M6'
-    groovyVersion = '2.1.9'
+    springBootVersion = '1.0.0.RC4'
+    groovyVersion = '2.2.2'
     junitVersion = '4.11'
 }
 
@@ -11,7 +11,7 @@ buildscript {
     }
     dependencies {
         // can't use a variable here -- chicken and egg issue
-        classpath( "org.springframework.boot:spring-boot-gradle-plugin:0.5.0.M6" )
+        classpath( "org.springframework.boot:spring-boot-gradle-plugin:1.0.0.RC4" )
     }
 }
 
@@ -21,7 +21,7 @@ apply plugin: 'spring-boot'
 
 repositories {
     mavenCentral()
-    maven { url 'http://repo.spring.io/libs-snapshot' }
+    maven { url 'http://repo.spring.io/milestone' }
 }
 
 dependencies {
