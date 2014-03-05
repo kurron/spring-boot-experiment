@@ -1,9 +1,3 @@
-ext {
-    springBootVersion = '1.0.0.RC4'
-    groovyVersion = '2.2.2'
-    junitVersion = '4.11'
-}
-
 buildscript {
     ext {
         // not very DRY but we have a chicken-and-egg situation
@@ -20,7 +14,6 @@ buildscript {
 }
 
 apply plugin: 'groovy'
-apply plugin: 'project-report'
 apply plugin: 'spring-boot'
 
 repositories {
@@ -29,22 +22,14 @@ repositories {
 }
 
 dependencies {
-    compile "org.codehaus.groovy:groovy-all:${groovyVersion}"
-    compile "org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}"
-    compile "org.springframework.boot:spring-boot-starter-batch:${springBootVersion}"
-    compile "org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}"
-    compile "org.springframework.boot:spring-boot-starter-integration:${springBootVersion}"
-//  compile "org.springframework.boot:spring-boot-starter-jetty:${springBootVersion}"
-    compile "org.springframework.boot:spring-boot-starter-logging:${springBootVersion}"
-    compile "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
-    compile "org.springframework.boot:spring-boot-starter-security:${springBootVersion}"
-    compile "org.springframework.boot:spring-boot-starter-tomcat:${springBootVersion}"
-    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
-    testCompile "junit:junit:${junitVersion}"
+    compile "org.codehaus.groovy:groovy-all:2.2.2"
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("com.fasterxml.jackson.core:jackson-databind")
+    testCompile("junit:junit")
 }
 
 task wrapper( type: Wrapper ) {
-    gradleVersion = '1.11'
+    gradleVersion = '1.10' // do not use 1.11 because IntelliJ cannot handle it yet
 }
 
-defaultTasks 'clean', 'projectReport', 'build'
+defaultTasks 'clean', 'build'
