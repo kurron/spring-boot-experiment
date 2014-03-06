@@ -7,6 +7,7 @@ import groovy.transform.Canonical
  */
 import org.springframework.data.annotation.Id;
 
+@SuppressWarnings( 'GroovyUnusedDeclaration' )
 @Canonical
 class Customer {
 
