@@ -17,14 +17,14 @@ import org.springframework.context.annotation.ImportResource
 import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration
 import org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor
 
-@SuppressWarnings("GrMethodMayBeStatic")
+@SuppressWarnings( 'GrMethodMayBeStatic' )
 @EnableAutoConfiguration
-@ComponentScan( ['org.kurron'] )
-@ImportResource( 'integration-context.xml' )
-@EnableConfigurationProperties( ServiceProperties.class )
-@Import( RepositoryRestMvcConfiguration.class )
+@ComponentScan( ['org.kurron.web'] )
+//@ImportResource( 'integration-context.xml' )
+//@EnableConfigurationProperties( ServiceProperties.class )
+//@Import( RepositoryRestMvcConfiguration.class )
 class Application {
-
+/*
     @Autowired
     private AmqpTemplate amqpTemplate;
 
@@ -55,7 +55,7 @@ class Application {
         container.setQueueNames( 'foo' )
         container
     }
-
+*/
     static void main( String[] args ) {
         SpringApplication.run( Application, args )
     }

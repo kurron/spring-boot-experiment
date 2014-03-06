@@ -1,8 +1,7 @@
-package org.kurron.web
+package org.kurron
 
-import org.kurron.Application
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
+import org.springframework.boot.builder.SpringApplicationBuilder
+import org.springframework.boot.context.web.SpringBootServletInitializer
 
 /**
  * Servlet 3.0 web initializer to launch Spring if we are in a web container.
