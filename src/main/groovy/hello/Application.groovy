@@ -10,13 +10,16 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
+import org.springframework.context.annotation.Import
 import org.springframework.context.annotation.ImportResource
+import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration
 import org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor
 
 @EnableAutoConfiguration
 @ComponentScan
 @ImportResource( 'integration-context.xml' )
 @EnableConfigurationProperties( ServiceProperties.class )
+@Import( RepositoryRestMvcConfiguration.class )
 class Application {
 
     @Autowired
