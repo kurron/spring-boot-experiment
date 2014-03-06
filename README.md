@@ -8,8 +8,5 @@ Provides a REST service at *http://localhost:8080/greeting*.  There are a couple
 To test out the service, point your browser to either:
 
 * [http://localhost:8080/hello](http://localhost:8080/hello) - exercise the web page generation logic
-* [http://localhost:8080/greeting](http://localhost:8080/greeting)
-* [http://localhost:8080/greeting?name=User]( http://localhost:8080/greeting?name=User)
-
-If you want to hit a plain HTML view try [http://localhost:8080/hello](http://localhost:8080/hello).  That should get you
-to a plain 'Hello World' view.
+* [http://localhost:8080/greeting](http://localhost:8080/greeting) - exercise REST endpoint with defaulted argument
+* [http://localhost:8080/greeting?name=User]( http://localhost:8080/greeting?name=User) - exercise REST endpoint with provided argument
