@@ -21,9 +21,10 @@ class Sender {
         amqpAdmin.declareQueue( new Queue( 'foo' ) )
     }
 
-    @Scheduled( fixedDelay = 1000L )
+    @Scheduled( fixedDelay = 5000L )
     void send() {
-        rabbitTemplate.convertAndSend( 'foo', 'hello' )
+        def message = new StringBuilder( 'From AMQP ' ).append( Long.toHexString( System.currentTimeMillis() ).toUpperCase() ).toString()
+        rabbitTemplate.convertAndSend( 'foo', message )
     }
 
 }
