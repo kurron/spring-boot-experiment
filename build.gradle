@@ -32,6 +32,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-integration")
+    compile("org.springframework.boot:spring-boot-starter-amqp")
     compile("org.springframework.data:spring-data-mongodb")
     compile("com.fasterxml.jackson.core:jackson-databind")
     testCompile("junit:junit")
