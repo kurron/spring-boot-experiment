@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController
 class HelloController {
 
     @SuppressWarnings("GrMethodMayBeStatic")
-    @RequestMapping( '/' )
+    @RequestMapping( '/hello' )
     String index() {
         'Greetings from Spring Boot!'
     }

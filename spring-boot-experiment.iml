@@ -49,6 +49,8 @@
     <orderEntry type="library" exported="" name="Gradle: spring-tx-3.2.8.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: spring-data-commons-1.7.0.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: mongo-java-driver-2.11.4" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-actuator-1.0.0.RC4" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-actuator-1.0.0.RC4" level="project" />
   </component>
 </module>
 
