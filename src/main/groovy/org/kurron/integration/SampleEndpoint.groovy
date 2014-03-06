@@ -1,11 +1,11 @@
 package org.kurron.integration
 
-import org.kurron.integration.HelloWorldService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.integration.annotation.MessageEndpoint
 import org.springframework.integration.annotation.ServiceActivator
 import org.springframework.util.StreamUtils
 
+@SuppressWarnings( 'GroovyUnusedDeclaration' )
 @MessageEndpoint
 class SampleEndpoint {
 
