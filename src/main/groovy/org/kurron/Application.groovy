@@ -1,5 +1,7 @@
-package hello
+package org.kurron
 
+import org.kurron.amqp.Sender
+import org.kurron.integration.ServiceProperties
 import org.springframework.amqp.core.AmqpTemplate
 import org.springframework.amqp.rabbit.connection.ConnectionFactory
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer
@@ -15,8 +17,9 @@ import org.springframework.context.annotation.ImportResource
 import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration
 import org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor
 
+@SuppressWarnings("GrMethodMayBeStatic")
 @EnableAutoConfiguration
-@ComponentScan
+@ComponentScan( ['org.kurron'] )
 @ImportResource( 'integration-context.xml' )
 @EnableConfigurationProperties( ServiceProperties.class )
 @Import( RepositoryRestMvcConfiguration.class )
@@ -42,7 +45,7 @@ class Application {
     public SimpleMessageListenerContainer container() {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer( connectionFactory )
         Object listener = new Object() {
-            @SuppressWarnings( "unused" )
+            @SuppressWarnings( 'GroovyUnusedDeclaration' )
             public void handleMessage( String foo ) {
                 println( foo )
             }

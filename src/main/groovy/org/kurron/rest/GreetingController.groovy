@@ -1,5 +1,8 @@
-package hello
+package org.kurron.rest
 
+import org.kurron.mongodb.Customer
+import org.kurron.mongodb.CustomerRepository
+import org.kurron.rest.Greeting
 import org.springframework.beans.factory.annotation.Autowired
 
 import java.util.concurrent.atomic.AtomicLong;

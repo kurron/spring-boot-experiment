@@ -1,4 +1,4 @@
-package hello
+package org.kurron.integration
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component

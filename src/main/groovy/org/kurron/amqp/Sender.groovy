@@ -1,4 +1,4 @@
-package hello
+package org.kurron.amqp
 
 import javax.annotation.PostConstruct;
 

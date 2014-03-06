@@ -1,4 +1,4 @@
-package hello
+package org.kurron.rest
 
 import groovy.transform.Canonical
 

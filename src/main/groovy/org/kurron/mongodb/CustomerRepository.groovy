@@ -1,5 +1,6 @@
-package hello
+package org.kurron.mongodb
 
+import org.kurron.mongodb.Customer
 import org.springframework.data.mongodb.repository.MongoRepository
 import org.springframework.data.rest.core.annotation.RepositoryRestResource
 

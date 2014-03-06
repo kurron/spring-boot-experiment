@@ -1,5 +1,6 @@
-package hello
+package org.kurron.web
 
+import org.kurron.Application
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 
