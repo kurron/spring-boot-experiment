@@ -16,15 +16,18 @@ class Sender {
     @Autowired
     private AmqpAdmin amqpAdmin
 
+    @Autowired
+    private CustomAmqpProperties configuration
+
     @PostConstruct
     void setUpQueue() {
-        amqpAdmin.declareQueue( new Queue( 'foo' ) )
+        amqpAdmin.declareQueue( new Queue( configuration.queue ) )
     }
 
     @Scheduled( fixedDelay = 5000L )
     void send() {
         def message = new StringBuilder( 'From AMQP ' ).append( Long.toHexString( System.currentTimeMillis() ).toUpperCase() ).toString()
-        rabbitTemplate.convertAndSend( 'foo', message )
+        rabbitTemplate.convertAndSend( configuration.queue, message )
     }
 
 }

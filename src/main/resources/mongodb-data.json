@@ -1,0 +1,14 @@
+[
+    { "_class"    : "org.kurron.mongodb.Customer",
+      "firstName" : "Ron",
+      "lastName"  : "Kurr" },
+    { "_class"    : "org.kurron.mongodb.Customer",
+      "firstName" : "Tara",
+      "lastName"  : "Kurr" },
+    { "_class"    : "org.kurron.mongodb.Customer",
+      "firstName" : "Devan",
+      "lastName"  : "Kurr" },
+    { "_class"    : "org.kurron.mongodb.Customer",
+      "firstName" : "Logan",
+      "lastName"  : "Kurr" }
+]

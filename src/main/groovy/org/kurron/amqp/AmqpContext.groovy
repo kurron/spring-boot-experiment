@@ -23,6 +23,9 @@ class AmqpContext {
     @Autowired
     private ConnectionFactory connectionFactory;
 
+    @Autowired
+    private CustomAmqpProperties configuration
+
     @Bean
     public ScheduledAnnotationBeanPostProcessor scheduledAnnotationBeanPostProcessor() {
         new ScheduledAnnotationBeanPostProcessor()
@@ -44,7 +47,7 @@ class AmqpContext {
         }
         MessageListenerAdapter adapter = new MessageListenerAdapter( listener )
         container.setMessageListener( adapter )
-        container.setQueueNames( 'foo' )
+        container.setQueueNames( configuration.queue )
         container
     }
 }

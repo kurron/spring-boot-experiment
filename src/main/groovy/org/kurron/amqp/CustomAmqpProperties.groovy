@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 class CustomAmqpProperties {
 
     /**
-     * An example of a custom property that could be accessed by a bean.
+     * The name of the AMQP queue to bind to.
      */
-    String foo = 'foo'
+    String queue = 'boot'
 }
