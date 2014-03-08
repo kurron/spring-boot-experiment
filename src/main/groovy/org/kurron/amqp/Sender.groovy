@@ -1,33 +1,33 @@
 package org.kurron.amqp
 
-import javax.annotation.PostConstruct;
+import org.springframework.amqp.core.AmqpAdmin
+import org.springframework.amqp.core.Queue
+import org.springframework.amqp.rabbit.core.RabbitOperations
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.scheduling.annotation.Scheduled
 
-import org.springframework.amqp.core.AmqpAdmin;
-import org.springframework.amqp.core.Queue;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
+import javax.annotation.PostConstruct
 
 class Sender {
 
     @Autowired
-    private RabbitTemplate rabbitTemplate
+    private RabbitOperations template
 
     @Autowired
-    private AmqpAdmin amqpAdmin
+    private AmqpAdmin admin
 
     @Autowired
     private CustomAmqpProperties configuration
 
     @PostConstruct
     void setUpQueue() {
-        amqpAdmin.declareQueue( new Queue( configuration.queue ) )
+        admin.declareQueue( new Queue( configuration.queue ) )
     }
 
     @Scheduled( fixedDelay = 5000L )
     void send() {
         String message = " ${configuration.prefix} ${Long.toHexString( System.currentTimeMillis() ).toUpperCase()}"
-        rabbitTemplate.convertAndSend( configuration.queue, message )
+        template.convertAndSend( configuration.queue, message )
     }
 
 }

@@ -18,10 +18,10 @@ import org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProc
 class AmqpContext {
 
     @Autowired
-    private AmqpTemplate amqpTemplate;
+    private AmqpTemplate template;
 
     @Autowired
-    private ConnectionFactory connectionFactory;
+    private ConnectionFactory factory;
 
     @Autowired
     private CustomAmqpProperties configuration
@@ -38,7 +38,7 @@ class AmqpContext {
 
     @Bean
     public SimpleMessageListenerContainer container() {
-        SimpleMessageListenerContainer container = new SimpleMessageListenerContainer( connectionFactory )
+        SimpleMessageListenerContainer container = new SimpleMessageListenerContainer( factory )
         Object listener = new Object() {
             @SuppressWarnings( 'GroovyUnusedDeclaration' )
             public void handleMessage( String foo ) {
