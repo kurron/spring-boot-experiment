@@ -26,7 +26,7 @@ class Sender {
 
     @Scheduled( fixedDelay = 5000L )
     void send() {
-        def message = new StringBuilder( 'From AMQP ' ).append( Long.toHexString( System.currentTimeMillis() ).toUpperCase() ).toString()
+        String message = " ${configuration.prefix} ${Long.toHexString( System.currentTimeMillis() ).toUpperCase()}"
         rabbitTemplate.convertAndSend( configuration.queue, message )
     }
 

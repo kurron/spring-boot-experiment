@@ -12,4 +12,9 @@ class CustomAmqpProperties {
      * The name of the AMQP queue to bind to.
      */
     String queue = 'boot'
+
+    /**
+     * The text the sender pre-pends to its message.
+     */
+    String prefix = 'From AMQP'
 }
