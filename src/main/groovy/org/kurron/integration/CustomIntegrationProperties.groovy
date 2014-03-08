@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * Custom configuration properties.
  */
-@ConfigurationProperties( name = 'intagration', ignoreUnknownFields = false )
+@ConfigurationProperties( name = 'integration', ignoreUnknownFields = false )
 class CustomIntegrationProperties {
 
     String greeting = 'Hello'
