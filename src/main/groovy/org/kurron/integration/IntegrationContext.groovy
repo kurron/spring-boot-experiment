@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ImportResource
 @SuppressWarnings( ['GrMethodMayBeStatic', 'GroovyUnusedDeclaration'] )
 @Configuration
 @ImportResource( 'integration-context.xml' )
-@EnableConfigurationProperties( ServiceProperties.class )
+@EnableConfigurationProperties( CustomIntegrationProperties.class )
 class IntegrationContext {
 
     // if we had any Spring Integration-specific beans, they would go in here.

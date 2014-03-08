@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component
 class HelloWorldService {
 
     @Autowired
-    private ServiceProperties configuration
+    private CustomIntegrationProperties configuration
 
     String getHelloMessage( String name ) {
         configuration.greeting + ' ' + name
