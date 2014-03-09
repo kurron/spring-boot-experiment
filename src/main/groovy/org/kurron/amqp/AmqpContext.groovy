@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProc
 
 @SuppressWarnings( ['GrMethodMayBeStatic', 'GroovyUnusedDeclaration'] )
 @Configuration
-@ImportResource( 'amqp-context.xml' )
+@ImportResource( 'META-INF/spring/amqp-context.xml' )
 @EnableConfigurationProperties( CustomAmqpProperties.class )
 class AmqpContext {
 

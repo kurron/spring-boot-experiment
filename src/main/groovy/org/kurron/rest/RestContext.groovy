@@ -9,7 +9,7 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguratio
 @SuppressWarnings( ['GrMethodMayBeStatic', 'GroovyUnusedDeclaration'] )
 @Configuration
 @Import( RepositoryRestMvcConfiguration.class )
-@ImportResource( 'rest-context.xml' )
+@ImportResource( 'META-INF/spring/rest-context.xml' )
 @EnableConfigurationProperties( CustomRestProperties.class )
 class RestContext {
 

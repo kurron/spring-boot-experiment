@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ImportResource
 
 @SuppressWarnings( ['GrMethodMayBeStatic', 'GroovyUnusedDeclaration'] )
 @Configuration
-@ImportResource( 'mongodb-context.xml' )
+@ImportResource( 'META-INF/spring/mongodb-context.xml' )
 @EnableConfigurationProperties( CustomMongoProperties.class )
 class MongoContext {
 

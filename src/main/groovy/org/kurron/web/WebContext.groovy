@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ImportResource
 
 @SuppressWarnings( ['GrMethodMayBeStatic', 'GroovyUnusedDeclaration'] )
 @Configuration
-@ImportResource( 'web-context.xml' )
+@ImportResource( 'META-INF/spring/web-context.xml' )
 @EnableConfigurationProperties( CustomWebProperties.class )
 class WebContext {
 
