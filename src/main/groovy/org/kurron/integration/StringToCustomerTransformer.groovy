@@ -12,6 +12,8 @@ class StringToCustomerTransformer {
     @Transformer
     Customer transform( String from ) {
         def parts = from.split( ',' )
-        new Customer( firstName: parts.last(), lastName: parts.first() )
+        def to = new Customer( firstName: parts.last(), lastName: parts.first() )
+        log.debug( "Transformed from [{}] to [{}]", from, to )
+        to
     }
 }
