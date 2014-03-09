@@ -21,6 +21,10 @@ class Sender {
     @Autowired
     private CustomAmqpProperties configuration
 
+    final def firstNames = ['Ron', 'Tara', 'Devan', 'Logan', 'Brian', 'Joan', 'Leah', 'Matt']
+    final def lastNames = ['Kurr', 'Smith', 'Hersh', 'Salvatore', 'Davidson', 'Lefevre', 'Demayo', 'Widison']
+    static final Random random = new Random()
+
     @PostConstruct
     void setUpQueue() {
         admin.declareQueue( new Queue( configuration.queue ) )
@@ -28,9 +32,13 @@ class Sender {
 
     @Scheduled( fixedDelay = 5000L )
     void send() {
-        String message = " ${configuration.prefix} ${Long.toHexString( System.currentTimeMillis() ).toUpperCase()}"
+        String message = "${selectName(lastNames)}, ${selectName(firstNames)}"
         log.debug( "{}", message )
         template.convertAndSend( configuration.queue, message )
+    }
+
+    private static String selectName(List<String> names) {
+        names[random.nextInt(names.size())]
     }
 
 }
