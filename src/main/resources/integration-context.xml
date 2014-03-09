@@ -20,7 +20,9 @@
             <bean class="org.kurron.integration.StringToCustomerTransformer"/>
         </int:transformer>
         <int:service-activator>
-            <bean class="org.kurron.integration.Receiver"/>
+            <bean class="org.kurron.integration.Receiver">
+                <constructor-arg ref="customerRepository"/>
+            </bean>
         </int:service-activator>
     </int:chain>
 </beans>
