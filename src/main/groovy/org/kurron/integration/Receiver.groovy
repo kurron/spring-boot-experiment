@@ -8,6 +8,7 @@ class Receiver {
     @SuppressWarnings( ["GroovyUnusedDeclaration", "GrMethodMayBeStatic"] )
     @ServiceActivator
     void echoMessage( String message ) {
-        log.debug( "{}", message )
+        def parts = message.split( ',' )
+        log.debug( "first name = {}, last name = {}", parts.last(), parts.first() )
     }
 }
