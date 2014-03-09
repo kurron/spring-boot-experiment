@@ -17,7 +17,7 @@
                                       queue-names="spring-boot"/>
     <int:chain input-channel="event-processing-channel">
         <int:service-activator>
-            <bean class="org.kurron.amqp.EchoService"/>
+            <bean class="org.kurron.integration.Receiver"/>
         </int:service-activator>
     </int:chain>
 </beans>

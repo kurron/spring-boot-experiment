@@ -29,7 +29,7 @@ class Sender {
     @Scheduled( fixedDelay = 5000L )
     void send() {
         String message = " ${configuration.prefix} ${Long.toHexString( System.currentTimeMillis() ).toUpperCase()}"
-        log.debug( "Sending {}", message )
+        log.debug( "{}", message )
         template.convertAndSend( configuration.queue, message )
     }
 
