@@ -1,5 +1,6 @@
 package org.kurron.amqp
 
+import groovy.util.logging.Slf4j
 import org.springframework.amqp.core.AmqpAdmin
 import org.springframework.amqp.core.Queue
 import org.springframework.amqp.rabbit.core.RabbitOperations
@@ -8,6 +9,7 @@ import org.springframework.scheduling.annotation.Scheduled
 
 import javax.annotation.PostConstruct
 
+@Slf4j
 class Sender {
 
     @Autowired
@@ -27,6 +29,7 @@ class Sender {
     @Scheduled( fixedDelay = 5000L )
     void send() {
         String message = " ${configuration.prefix} ${Long.toHexString( System.currentTimeMillis() ).toUpperCase()}"
+        log.debug( "Sending {}", message )
         template.convertAndSend( configuration.queue, message )
     }
 

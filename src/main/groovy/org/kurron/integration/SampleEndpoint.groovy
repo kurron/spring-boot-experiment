@@ -6,7 +6,7 @@ import org.springframework.integration.annotation.ServiceActivator
 import org.springframework.util.StreamUtils
 
 @SuppressWarnings( 'GroovyUnusedDeclaration' )
-@MessageEndpoint
+@MessageEndpoint( 'sampleEndpoint' )
 class SampleEndpoint {
 
     @Autowired
