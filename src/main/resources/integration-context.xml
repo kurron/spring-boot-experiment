@@ -16,6 +16,9 @@
                                       mapped-request-headers="*"
                                       queue-names="spring-boot"/>
     <int:chain input-channel="event-processing-channel">
+        <int:transformer>
+            <bean class="org.kurron.integration.StringToCustomerTransformer"/>
+        </int:transformer>
         <int:service-activator>
             <bean class="org.kurron.integration.Receiver"/>
         </int:service-activator>
