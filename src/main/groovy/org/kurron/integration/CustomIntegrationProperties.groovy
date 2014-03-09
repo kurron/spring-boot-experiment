@@ -8,5 +8,5 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties( name = 'integration', ignoreUnknownFields = false )
 class CustomIntegrationProperties {
 
-    String greeting = 'Hello'
+    String message = '{}'
 }

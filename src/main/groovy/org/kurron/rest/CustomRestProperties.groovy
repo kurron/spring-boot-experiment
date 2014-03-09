@@ -11,5 +11,5 @@ class CustomRestProperties {
     /**
      * An example of a custom property that could be accessed by a bean.
      */
-    String foo = 'foo'
+    String template = 'Hello, %s!'
 }

@@ -11,17 +11,16 @@ import org.springframework.integration.annotation.ServiceActivator
 @MessageEndpoint
 class Receiver {
 
-    private final CustomerRepository theRepository
+    @Autowired
+    private CustomerRepository repository
 
     @Autowired
-    Receiver( CustomerRepository repository ) {
-        theRepository = repository
-    }
+    private CustomIntegrationProperties configuration
 
     @SuppressWarnings( ["GroovyUnusedDeclaration", "GrMethodMayBeStatic"] )
     @ServiceActivator
     void persistCustomer( Customer customer) {
-        def persisted = theRepository.save( customer )
-        log.debug( "Just stored {} in MongoDB", persisted )
+        def persisted = repository.save( customer )
+        log.debug( configuration.message , persisted )
     }
 }
