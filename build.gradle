@@ -15,6 +15,7 @@ buildscript {
 
 apply plugin: 'groovy'
 apply plugin: 'spring-boot'
+apply plugin: 'project-report'
 // uncomment if you want to package it up as a WAR instead
 // apply plugin: 'war'
 
@@ -27,6 +28,18 @@ springBoot {
     backupSource = false
 }
 
+configurations.all {
+    exclude group: 'commons-logging'
+    exclude group: 'org.mockito'
+    exclude module: 'junit-dep'
+    exclude module: 'hamcrest-core'
+}
+
+ext {
+    junitVersion = '4.11'
+    spockVersion = '0.7-groovy-2.0'
+}
+
 dependencies {
     compile "org.codehaus.groovy:groovy-all:2.2.2"
     compile "org.springframework.boot:spring-boot-starter-actuator"
@@ -37,11 +50,15 @@ dependencies {
     compile "org.springframework.data:spring-data-mongodb"
     compile "org.springframework.integration:spring-integration-amqp:3.0.1.RELEASE"
     compile "com.fasterxml.jackson.core:jackson-databind"
-    testCompile "junit:junit"
+
+    testCompile "junit:junit:${junitVersion}"
+    testCompile( "org.spockframework:spock-core:${spockVersion}" ) { exclude module: 'groovy-all' }
+    testCompile( "org.spockframework:spock-spring:${spockVersion}" ) { exclude module: 'groovy-all' }
+    testCompile "org.springframework:spring-test"
 }
 
 task wrapper( type: Wrapper ) {
     gradleVersion = '1.10' // do not use 1.11 because IntelliJ cannot handle it yet
 }
 
-defaultTasks 'clean', 'build'
+defaultTasks 'clean', 'projectReport', 'build'
