@@ -16,8 +16,7 @@ buildscript {
 apply plugin: 'groovy'
 apply plugin: 'spring-boot'
 apply plugin: 'project-report'
-// uncomment if you want to package it up as a WAR instead
-// apply plugin: 'war'
+apply plugin: 'war'
 
 repositories {
     mavenCentral()
