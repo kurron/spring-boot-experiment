@@ -19,18 +19,17 @@ To test out the service, point your browser to one of the following:
 ## Actuator Support
 Spring Boot provides support for the Operations team via an Actuator.  To see what support is available, point your browser to one of the folloing URLs:
 
-* [http://localhost:8080/webjars](http://localhost:8080/webjars/) - to see what JARs are embedded in the WAR
 * [http://localhost:8080/info](http://localhost:8080/info/) - to see general information
 * [http://localhost:8080/mappings](http://localhost:8080/mappings/) - to see the available URI mappings
-* [http://localhost:8080/health](http://localhost:8080/health/) - to see the health of the application
+* [http://localhost:8080/health](http://localhost:8080/health/) - to be used by load balancer and monitoring tools to indicate that the application is alive
 * [http://localhost:8080/dump](http://localhost:8080/dump/) - to see thread dump of the application
-* [http://localhost:8080/metrics](http://localhost:8080/metrics/) - to various metrics of the application
-* [http://localhost:8080/shutdown](http://localhost:8080/shutdown/) - to shutdown the application
-* [http://localhost:8080/autoconfig](http://localhost:8080/autoconfig/) - to configuration of the application
+* [http://localhost:8080/metrics](http://localhost:8080/metrics/) - to various metrics of the application, such a free memory
+* [http://localhost:8080/shutdown](http://localhost:8080/shutdown/) - to shutdown the application (must be enabled first)
+* [http://localhost:8080/autoconfig](http://localhost:8080/autoconfig/) - to see how Spring Boot applied configuration logic to the application
 * [http://localhost:8080/beans](http://localhost:8080/beans/) - to Spring Bean in the application
 * [http://localhost:8080/trace](http://localhost:8080/trace/) - to see a trace the application
 * [http://localhost:8080/env](http://localhost:8080/env/) - to see the current environment the application
-* [http://localhost:8080/configprops](http://localhost:8080/configprops/) - not sure
+* [http://localhost:8080/configprops](http://localhost:8080/configprops/) - configuration properties broken out by configuration
 
 This same support is available via JMX MBeans and can be accessed by various monitoring tools, including VisualVM that comes as part of
 the Oracle JDK.
