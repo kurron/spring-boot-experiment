@@ -16,6 +16,14 @@ To test out the service, point your browser to one of the following:
 * [http://localhost:8080/greeting](http://localhost:8080/greeting) - exercise REST endpoint with defaulted argument
 * [http://localhost:8080/greeting?name=User]( http://localhost:8080/greeting?name=User) - exercise REST endpoint with provided argument
 
+## Shutting Down
+There are a couple ways to stop the server:
+
+* POST to `http://localhost:8080/shutdown` - I have successfully used `curl --data "" http://localhost:8080/shutdown/`
+* Use a JMX console, such as VisualVM and invoke the shutdown() operation on the proper MBean
+* ctrl-c to kill the process
+
+
 ## Actuator Support
 Spring Boot provides support for the Operations team via an Actuator.  To see what support is available, point your browser to one of the folloing URLs:
 
