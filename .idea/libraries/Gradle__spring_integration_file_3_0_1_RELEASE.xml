@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-file/3.0.1.RELEASE/f11addc64726ac544d18bb2e9193029b72f1d37f/spring-integration-file-3.0.1.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-file/3.0.1.RELEASE/f11addc64726ac544d18bb2e9193029b72f1d37f/spring-integration-file-3.0.1.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-amqp/1.0.0.RC4/5c104493ba911ae1f58cd0c82acc08ca984c0c56/spring-boot-starter-amqp-1.0.0.RC4-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-amqp/1.0.0.RC4/5c104493ba911ae1f58cd0c82acc08ca984c0c56/spring-boot-starter-amqp-1.0.0.RC4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

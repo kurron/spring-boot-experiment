@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-rest/1.0.0.RC4/3856662009d690dd2e08810f0c525b4d4e3bfca6/spring-boot-starter-data-rest-1.0.0.RC4-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-rest/1.0.0.RC4/3856662009d690dd2e08810f0c525b4d4e3bfca6/spring-boot-starter-data-rest-1.0.0.RC4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
