@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2014 Transparent Language.  All rights reserved.
+  -->
 <configuration debug="false">
-    <contextName>Test</contextName>
+    <contextName>Thor (development)</contextName>
+
+    <!-- required to ensure that bridging from java.util.logging does not cause a 20% performance hit -->
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator"/>
+
     <property name="MESSAGE_FORMAT"
-              value="%contextName %5.5relative %1(%.-1level) %35.35logger{0} %message %throwable{short}%n"/>
+              value="%contextName %5.5relative %1(%.-1level) %10.10mdc{work-unit} %4.4mdc{application-type} %4.4mdc{message-code} %35.35logger{0} %message %throwable{short}%n"/>
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>${MESSAGE_FORMAT}</pattern>
         </encoder>
-        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-            <level>ALL</level>
-        </filter>
     </appender>
 
-    <logger name="org.kurron" level="ALL"/>
+    <appender name="LFS" class="com.moonlit.logfaces.appenders.logback.LogfacesAppender">
+        <remoteHost>192.168.254.123</remoteHost>
+        <application>Thor</application>
+        <locationInfo>true</locationInfo>
+        <reconnectionDelay>1000</reconnectionDelay>
+        <offerTimeout>0</offerTimeout>
+        <queueSize>200</queueSize>
+        <appender-ref ref="CONSOLE" />
+        <delegateMarker>true</delegateMarker>
+    </appender>
+
+    <logger name="com.transparent" level="ALL"/>
+    <logger name="com.mongodb" level="WARN"/>
     <logger name="org.springframework" level="INFO"/>
-    <!--
+
     <logger name="org.springframework.integration.channel.interceptor.WireTap" level="ALL"/>
     <logger name="org.springframework.integration.handler.LoggingHandler" level="ALL"/>
--->
-    <!--<logger name="org.springframework.integration" level="ALL"/>-->
 
     <root level="WARN">
         <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="LFS"/>
     </root>
 </configuration>

@@ -6,7 +6,6 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-amqp/3.0.1.RELEASE/40cc7fff255219554de5a65c92005c3b9a88102/spring-integration-amqp-3.0.1.RELEASE-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-amqp/3.0.1.RELEASE/40cc7fff255219554de5a65c92005c3b9a88102/spring-integration-amqp-3.0.1.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

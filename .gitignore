@@ -1,12 +1,15 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-.gradle
 build
 out
-
+.gradle
 .idea/workspace.xml
+tomcat.8080
+
+.idea/.name
+.idea/artifacts/Gradle___com_transparent_asgard_thor___thor_1_0_0_SNAPSHOT_war.xml
+.idea/compiler.xml
+.idea/copyright/
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/
+.idea/vcs.xml

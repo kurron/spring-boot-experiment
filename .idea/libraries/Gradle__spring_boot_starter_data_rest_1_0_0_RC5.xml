@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: spring-boot-starter-data-rest-1.0.0.RC5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-rest/1.0.0.RC5/1364e3d05865d597b10c7e2c3d48ee03d31a6e86/spring-boot-starter-data-rest-1.0.0.RC5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-rest/1.0.0.RC5/89deaea095224d6ae36d4d2cae98488c93a05218/spring-boot-starter-data-rest-1.0.0.RC5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
