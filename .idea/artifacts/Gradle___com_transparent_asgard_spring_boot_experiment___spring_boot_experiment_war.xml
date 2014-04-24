@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="Gradle : com.transparent.asgard:spring-boot-experiment : spring-boot-experiment.war">
+  <artifact type="war" build-on-make="true" name="Gradle : com.transparent.asgard:spring-boot-experiment : spring-boot-experiment.war">
     <output-path>$PROJECT_DIR$/out/artifacts/spring-boot-experiment</output-path>
     <root id="archive" name="spring-boot-experiment.war">
       <element id="javaee-facet-resources" facet="spring-boot-experiment/web/Web Gradle : spring-boot-experiment.war" />

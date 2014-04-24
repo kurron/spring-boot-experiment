@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ Copyright (c) 2014 Transparent Language.  All rights reserved.
-  -->
-
-<!-- This Logback configuration file is intended for production environments. -->
 <configuration debug="false">
     <contextName>Thor</contextName>
     <property name="MESSAGE_FORMAT"
@@ -18,22 +13,9 @@
         </filter>
     </appender>
 
-    <appender name="LFS" class="com.moonlit.logfaces.appenders.logback.LogfacesAppender">
-        <remoteHost>192.168.254.123</remoteHost>
-        <application>Thor</application>
-        <locationInfo>true</locationInfo>
-        <reconnectionDelay>1000</reconnectionDelay>
-        <offerTimeout>0</offerTimeout>
-        <queueSize>200</queueSize>
-        <appender-ref ref="CONSOLE" />
-        <delegateMarker>true</delegateMarker>
-    </appender>
-
-    <logger name="com.transparent" level="ALL"/>
     <logger name="org.springframework" level="INFO"/>
 
     <root level="WARN">
         <appender-ref ref="CONSOLE"/>
-        <appender-ref ref="LFS"/>
     </root>
 </configuration>
