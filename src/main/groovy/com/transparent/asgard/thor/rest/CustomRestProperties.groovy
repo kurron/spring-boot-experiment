@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties
 /**
  * Custom configuration properties.
  */
-@ConfigurationProperties( name = 'rest', ignoreUnknownFields = false )
+@ConfigurationProperties( value = 'rest', ignoreUnknownFields = false )
 class CustomRestProperties {
 
     /**

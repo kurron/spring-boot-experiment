@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties
 /**
  * Custom configuration properties.
  */
-@ConfigurationProperties( name = 'amqp', ignoreUnknownFields = false )
+@ConfigurationProperties( value = 'amqp', ignoreUnknownFields = false )
 class CustomAmqpProperties {
 
     /**

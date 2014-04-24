@@ -1,7 +1,7 @@
 buildscript {
     ext {
         // not very DRY but we have a chicken-and-egg situation
-        springBootVersion = '1.0.0.RC5'
+        springBootVersion = '1.0.1.RELEASE'
     }
 
     repositories {
@@ -27,7 +27,7 @@ group = 'com.transparent.asgard'
     apply plugin: 'project-report'
 
     ext {
-        springBootVersion = '1.0.0.RC5'
+        springBootVersion = '1.0.1.RELEASE'
 
         groovyVersion = '2.2.2'
         hamcrestVersion = '1.3'

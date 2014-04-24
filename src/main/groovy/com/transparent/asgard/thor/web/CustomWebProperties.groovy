@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties
 /**
  * Custom configuration properties.
  */
-@ConfigurationProperties( name = 'web', ignoreUnknownFields = false )
+@ConfigurationProperties( value = 'web', ignoreUnknownFields = false )
 class CustomWebProperties {
 
     /**

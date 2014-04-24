@@ -5,7 +5,7 @@ import groovy.util.logging.Slf4j
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.context.embedded.EmbeddedWebApplicationContext
 import org.springframework.boot.test.IntegrationTest
-import org.springframework.boot.test.RestTemplates
+import org.springframework.boot.test.TestRestTemplate
 import org.springframework.test.context.web.WebAppConfiguration
 
 @Slf4j
@@ -18,7 +18,7 @@ class RestIntegrationTestSpockStyle extends SpockIntegrationTest {
 
     void 'exercise health check'() {
         given: 'a valid REST template'
-        def template = RestTemplates.get()
+        def template = new TestRestTemplate()
 
         and: 'we know the server port'
         def port = server.embeddedServletContainer.port

@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties
 /**
  * Custom configuration properties.
  */
-@ConfigurationProperties( name = 'mongodb', ignoreUnknownFields = false )
+@ConfigurationProperties( value = 'mongodb', ignoreUnknownFields = false )
 class CustomMongoProperties {
 
     /**

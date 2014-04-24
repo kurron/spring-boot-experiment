@@ -1,5 +1,6 @@
 build
 out
+target
 .gradle
 .idea/workspace.xml
 tomcat.8080
@@ -13,3 +14,4 @@ tomcat.8080
 .idea/modules.xml
 .idea/scopes/
 .idea/vcs.xml
+

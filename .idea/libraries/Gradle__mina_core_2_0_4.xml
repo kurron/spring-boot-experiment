@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.mina/mina-core/2.0.4/bc32c829531f408a084f5090cf058208cd945c1/mina-core-2.0.4-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.mina/mina-core/2.0.4/bc32c829531f408a084f5090cf058208cd945c1/mina-core-2.0.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

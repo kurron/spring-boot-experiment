@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-webmvc/2.0.1.RELEASE/87d72947ed6b00d68a0c7ab0c3ec6519e760400d/spring-data-rest-webmvc-2.0.1.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-webmvc/2.0.1.RELEASE/87d72947ed6b00d68a0c7ab0c3ec6519e760400d/spring-data-rest-webmvc-2.0.1.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

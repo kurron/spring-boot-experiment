@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.plugin/spring-plugin-core/1.0.0.RELEASE/33ada6ede23df7a5b9930726628a1c165f3cb49b/spring-plugin-core-1.0.0.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.plugin/spring-plugin-core/1.0.0.RELEASE/33ada6ede23df7a5b9930726628a1c165f3cb49b/spring-plugin-core-1.0.0.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
