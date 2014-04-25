@@ -4,16 +4,17 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/src/main/groovy/org/kurron/amqp/AmqpContext.groovy</file>
-          <file>file://$MODULE_DIR$/src/main/groovy/org/kurron/integration/IntegrationContext.groovy</file>
-          <file>file://$MODULE_DIR$/src/main/groovy/org/kurron/mongodb/MongoContext.groovy</file>
-          <file>file://$MODULE_DIR$/src/main/groovy/org/kurron/rest/RestContext.groovy</file>
-          <file>file://$MODULE_DIR$/src/main/groovy/org/kurron/web/WebContext.groovy</file>
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/amqp-context.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/integration-context.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/mongodb-context.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/rest-context.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/web-context.xml</file>
+          <file>file://$MODULE_DIR$/src/main/groovy/com/transparent/asgard/thor/amqp/AmqpContext.groovy</file>
+          <file>file://$MODULE_DIR$/src/main/groovy/com/transparent/asgard/thor/amqp/AmqpContextQA.groovy</file>
+          <file>file://$MODULE_DIR$/src/main/groovy/com/transparent/asgard/thor/integration/IntegrationContext.groovy</file>
+          <file>file://$MODULE_DIR$/src/main/groovy/com/transparent/asgard/thor/mongodb/MongoContext.groovy</file>
+          <file>file://$MODULE_DIR$/src/main/groovy/com/transparent/asgard/thor/rest/RestContext.groovy</file>
+          <file>file://$MODULE_DIR$/src/main/groovy/com/transparent/asgard/thor/web/WebContext.groovy</file>
         </fileset>
       </configuration>
     </facet>
