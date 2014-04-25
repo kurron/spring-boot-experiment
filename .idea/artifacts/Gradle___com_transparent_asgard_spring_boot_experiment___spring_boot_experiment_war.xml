@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="Gradle : com.transparent.asgard:spring-boot-experiment : spring-boot-experiment.war">
+  <artifact type="war" name="Gradle : com.transparent.asgard:spring-boot-experiment : spring-boot-experiment.war">
     <output-path>$PROJECT_DIR$/out/artifacts/spring-boot-experiment</output-path>
     <root id="archive" name="spring-boot-experiment.war">
       <element id="javaee-facet-resources" facet="spring-boot-experiment/web/Web Gradle : spring-boot-experiment.war" />
@@ -18,26 +18,13 @@
           <element id="library" level="project" name="Gradle: jackson-annotations-2.3.0" />
           <element id="library" level="project" name="Gradle: mongo-java-driver-2.11.4" />
           <element id="library" level="project" name="Gradle: spring-retry-1.0.3.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-integration-core-3.0.1.RELEASE" />
           <element id="library" level="project" name="Gradle: commons-io-2.4" />
-          <element id="library" level="project" name="Gradle: spring-integration-file-3.0.1.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-integration-http-3.0.1.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-integration-ip-3.0.1.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-integration-stream-3.0.1.RELEASE" />
-          <element id="library" level="project" name="Gradle: amqp-client-3.1.3" />
-          <element id="library" level="project" name="Gradle: spring-amqp-1.2.1.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-rabbit-1.2.1.RELEASE" />
           <element id="library" level="project" name="Gradle: objenesis-1.3" />
           <element id="library" level="project" name="Gradle: spring-hateoas-0.9.0.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-plugin-core-1.0.0.RELEASE" />
           <element id="library" level="project" name="Gradle: evo-inflector-1.0.1" />
-          <element id="library" level="project" name="Gradle: spring-integration-amqp-3.0.1.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-data-rest-webmvc-2.0.1.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-data-mongodb-1.4.1.RELEASE" />
           <element id="library" level="project" name="Gradle: slf4j-ext-1.7.6" />
           <element id="library" level="project" name="Gradle: jackson-module-jaxb-annotations-2.3.1" />
-          <element id="library" level="project" name="Gradle: spring-data-commons-1.7.1.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-data-rest-core-2.0.1.RELEASE" />
           <element id="library" level="project" name="Gradle: crash.cli-1.3.0-beta14" />
           <element id="library" level="project" name="Gradle: crash.shell-1.3.0-beta14" />
           <element id="library" level="project" name="Gradle: mina-core-2.0.4" />
@@ -86,6 +73,19 @@
           <element id="library" level="project" name="Gradle: jackson-core-2.3.2" />
           <element id="library" level="project" name="Gradle: spring-boot-actuator-1.0.1.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-security-core-3.2.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-integration-core-3.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-integration-file-3.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-integration-http-3.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-integration-ip-3.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-integration-stream-3.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-integration-amqp-3.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-rabbit-1.3.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-data-rest-webmvc-2.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-data-mongodb-1.4.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-amqp-1.3.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: amqp-client-3.2.4" />
+          <element id="library" level="project" name="Gradle: spring-data-commons-1.7.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-data-rest-core-2.0.2.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

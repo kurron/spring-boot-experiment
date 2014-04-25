@@ -6,7 +6,6 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.2.2/4496b02f0e030b7b485aa0964eb16f223940ee86/groovy-all-2.2.2-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.2.2/4496b02f0e030b7b485aa0964eb16f223940ee86/groovy-all-2.2.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

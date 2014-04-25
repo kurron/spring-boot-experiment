@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: spring-integration-ip-3.0.2.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-ip/3.0.2.RELEASE/89e4f0d270037f19fec04c3f24ad2901f39b076a/spring-integration-ip-3.0.2.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-ip/3.0.2.RELEASE/69d24cc1f77f73788808067ece36995f32df6f41/spring-integration-ip-3.0.2.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
