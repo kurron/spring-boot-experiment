@@ -19,7 +19,7 @@ repositories {
 }
 
 description = 'Example Services.'
-group = 'com.transparent.asgard'
+group = 'org.kurron.asgard'
 
     apply plugin: 'groovy'
     apply plugin: 'spring-boot'

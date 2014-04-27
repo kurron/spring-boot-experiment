@@ -17,10 +17,10 @@
                                       queue-names="spring-boot"/>
     <int:chain input-channel="event-processing-channel">
         <int:transformer>
-            <bean autowire="byType" class="com.transparent.asgard.thor.integration.StringToCustomerTransformer"/>
+            <bean autowire="byType" class="org.kurron.asgard.thor.integration.StringToCustomerTransformer"/>
         </int:transformer>
         <int:service-activator>
-            <bean autowire="byType" class="com.transparent.asgard.thor.integration.Receiver">
+            <bean autowire="byType" class="org.kurron.asgard.thor.integration.Receiver">
             </bean>
         </int:service-activator>
     </int:chain>

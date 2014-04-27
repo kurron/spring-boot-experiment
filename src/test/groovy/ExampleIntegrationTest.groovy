@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2013. Transparent Language.  All rights reserved.
  */
-package com.transparent
+package com.kurron
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.test.context.ContextConfiguration
@@ -10,7 +10,7 @@ import spock.lang.Specification
 /**
  * An example of a Spock-based integration test.
  */
-@ContextConfiguration( locations = ['/com/transparent/ExampleIntegrationTest-context.xml'] )
+@ContextConfiguration( locations = ['/org/transparent/ExampleIntegrationTest-context.xml'] )
 class ExampleIntegrationTest extends Specification {
 
     @Autowired

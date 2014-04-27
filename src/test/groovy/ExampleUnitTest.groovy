@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2013. Transparent Language.  All rights reserved.
  */
-package com.transparent
+package com.kurron
 
 import spock.lang.Specification
 
