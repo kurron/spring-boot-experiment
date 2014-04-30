@@ -25,11 +25,8 @@ import org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProc
 @EnableCaching
 @ComponentScan( ['com.kurron.asgard.thor'] )
 @Import( RepositoryRestMvcConfiguration )
-@ImportResource( ['classpath:META-INF/spring/amqp-context.xml',
-                  'classpath:META-INF/spring/integration-context.xml',
-                  'classpath:META-INF/spring/mongodb-context.xml',
-                  'classpath:META-INF/spring/rest-context.xml',
-                  'classpath:META-INF/spring/web-context.xml'] )
+@ImportResource( ['classpath:META-INF/spring/integration-context.xml',
+                  'classpath:META-INF/spring/mongodb-context.xml'] )
 class Application extends SpringBootServletInitializer {
     /**
      * Configurable properties used to customize the builder.
