@@ -1,6 +1,7 @@
 package org.kurron.asgard.thor.amqp
 
 import groovy.util.logging.Slf4j
+import org.kurron.asgard.thor.ApplicationProperties
 import org.springframework.amqp.core.AmqpAdmin
 import org.springframework.amqp.core.Queue
 import org.springframework.amqp.rabbit.core.RabbitOperations
@@ -21,7 +22,7 @@ class Sender {
     private AmqpAdmin admin
 
     @Autowired
-    private CustomAmqpProperties configuration
+    private ApplicationProperties configuration
 
     @Autowired
     private CounterService counter

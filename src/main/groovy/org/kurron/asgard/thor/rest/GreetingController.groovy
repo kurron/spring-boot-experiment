@@ -1,5 +1,6 @@
 package org.kurron.asgard.thor.rest
 
+import org.kurron.asgard.thor.ApplicationProperties
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.actuate.metrics.GaugeService
 import org.springframework.web.bind.annotation.RequestMapping
@@ -21,7 +22,7 @@ class GreetingController {
     GaugeService gauge
 
     @Autowired
-    private CustomRestProperties configuration
+    private ApplicationProperties configuration
 
     @RequestMapping( '/greeting' )
     Greeting greeting( @RequestParam( value = 'name', required = false, defaultValue = 'World' ) String name ) {

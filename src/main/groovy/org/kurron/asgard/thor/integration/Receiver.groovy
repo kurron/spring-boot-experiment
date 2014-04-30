@@ -1,5 +1,6 @@
 package org.kurron.asgard.thor.integration
 
+import org.kurron.asgard.thor.ApplicationProperties
 import org.kurron.asgard.thor.mongodb.CustomerRepository
 import groovy.util.logging.Slf4j
 import org.kurron.asgard.thor.mongodb.Customer
@@ -16,7 +17,7 @@ class Receiver {
     private CustomerRepository repository
 
     @Autowired
-    private CustomIntegrationProperties configuration
+    private ApplicationProperties configuration
 
     @Autowired
     private CounterService counter

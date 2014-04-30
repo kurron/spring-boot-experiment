@@ -1,5 +1,6 @@
 package org.kurron.asgard.thor.web
 
+import org.kurron.asgard.thor.ApplicationProperties
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.actuate.metrics.CounterService
 import org.springframework.web.bind.annotation.RequestMapping
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 class HelloController {
 
     @Autowired
-    private CustomWebProperties configuration
+    private ApplicationProperties configuration
 
     @Autowired
     private CounterService counter
@@ -19,7 +20,7 @@ class HelloController {
     @RequestMapping( '/hello' )
     String index() {
         counter.increment( 'HelloController.hello' )
-        configuration.message
+        configuration.webMessage
     }
 
 }
