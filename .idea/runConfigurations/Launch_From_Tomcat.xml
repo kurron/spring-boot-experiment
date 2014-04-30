@@ -71,9 +71,7 @@
       </SHUTDOWN>
     </ConfigurationWrapper>
     <method>
-      <option name="BuildArtifacts" enabled="true">
-        <artifact name="spring-boot-experiment (exploded)" />
-      </option>
+      <option name="BuildArtifacts" enabled="true" />
     </method>
   </configuration>
 </component>
