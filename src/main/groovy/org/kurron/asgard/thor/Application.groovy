@@ -20,13 +20,13 @@ import org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProc
 
 @Configuration
 @EnableConfigurationProperties( ApplicationProperties )
-@SuppressWarnings( 'GrMethodMayBeStatic' )
 @EnableAutoConfiguration
 @EnableCaching
-@ComponentScan( ['com.kurron.asgard.thor'] )
+@ComponentScan( ['org.kurron.asgard.thor'] )
 @Import( RepositoryRestMvcConfiguration )
 @ImportResource( ['classpath:META-INF/spring/integration-context.xml',
                   'classpath:META-INF/spring/mongodb-context.xml'] )
+@SuppressWarnings( 'GrMethodMayBeStatic' )
 class Application extends SpringBootServletInitializer {
     /**
      * Configurable properties used to customize the builder.

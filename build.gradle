@@ -58,21 +58,23 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-amqp:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-aop:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}")
-    compile("org.springframework.boot:spring-boot-starter-batch:${springBootVersion}")
+//  compile("org.springframework.boot:spring-boot-starter-batch:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-integration:${springBootVersion}")
-    compile("org.springframework.boot:spring-boot-starter-jdbc:${springBootVersion}")
-    compile("org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}")
-    compile("org.springframework.boot:spring-boot-starter-mobile:${springBootVersion}")
+//  compile("org.springframework.boot:spring-boot-starter-jdbc:${springBootVersion}")
+//  compile("org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}")
+//  compile("org.springframework.boot:spring-boot-starter-mobile:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-data-mongodb:${springBootVersion}")
-    compile("org.springframework.boot:spring-boot-starter-redis:${springBootVersion}")
+//  compile("org.springframework.boot:spring-boot-starter-redis:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-remote-shell:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-data-rest:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-security:${springBootVersion}")
-    compile("org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}")
+//  compile("org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
 
-    testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+    compile "org.springframework.integration:spring-integration-amqp:${springIntegrationVersion}"
 
+    testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+    testCompile "org.springframework.integration:spring-integration-test:${springIntegrationVersion}"
     testCompile "junit:junit:${junitVersion}"
     testCompile( "org.spockframework:spock-core:${spockVersion}" ) { exclude module: 'groovy-all' }
     testCompile( "org.spockframework:spock-spring:${spockVersion}" ) { exclude module: 'groovy-all' }
